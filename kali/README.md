@@ -59,7 +59,7 @@ https://github.com/infodox/python-pty-shells
 ##### 20. SecLists - SecLists is the security tester's companion. It is a collection of multiple types of lists used during security assessments.
 https://github.com/danielmiessler/SecLists
 ##### 21. fail2ban - ips
-# 22. ufw - iptables wrapper
+##### 22. ufw - iptables wrapper
 ##### 23. sshng2john
 https://github.com/stricture/hashstack-server-plugin-jtr/tree/master/scrapers
 ##### 24. lnav - log file navigator

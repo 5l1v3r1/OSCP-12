@@ -244,5 +244,5 @@ tmux_conf="
 \n# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 \nrun '~/.tmux/plugins/tpm/tpm'"
 
-(git clone https://github.com/tmux-plugins/tpm /home/$USER/.tmux/plugins/tpm && echo "alias xclip=\'xclip -selection c\'" >> /home/$USER/.profile && echo -e ${tmux_conf} >  /home/$USER//.tmux.conf)  1>/dev/null 2>>ERROR_FILE
+(git clone https://github.com/tmux-plugins/tpm /home/$USER/.tmux/plugins/tpm && echo "alias xclip='xclip -selection c'" >> /home/$USER/.profile && echo -e ${tmux_conf} >  /home/$USER//.tmux.conf)  1>/dev/null 2>>ERROR_FILE
 check "Tmux"

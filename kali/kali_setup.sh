@@ -55,7 +55,11 @@
 # Tmux Resurrect - Restore tmux environment after system restart - https://github.com/tmux-plugins/tmux-resurrect
 # Tmux Better Mouse Mode - https://github.com/NHDaly/tmux-better-mouse-mode
 # 27. Impacket - Impacket is a collection of Python classes for working with network protocols (see examples dir)
-#
+# https://github.com/CoreSecurity/impacket
+# 28. HashID - Identify the different types of hashes used to encrypt data and especially passwords
+# https://psypanda.github.io/hashID/
+# 29. Nishang - Powershell for pentesting
+# https://github.com/samratashok/nishang
 # Other
 # 1. Firefox ext:
 #    1.1. User Agent Switcher - https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/?src=search
@@ -248,6 +252,15 @@ tmux_conf="
 (git clone https://github.com/tmux-plugins/tpm /home/$USER/.tmux/plugins/tpm && echo "alias xclip='xclip -selection c'" >> /home/$USER/.profile && echo -e ${tmux_conf} >  /home/$USER//.tmux.conf)  1>/dev/null 2>>ERROR_FILE
 check "Tmux"
 
-#27. Impacket
+# 27. Impacket
 (git clone https://github.com/CoreSecurity/impacket.git /opt/impacket && pip install /opt/impacket) 1 > /dev/null 2>>ERROR_FILE
 check "Impacket"
+
+# 28. HashID
+(pip install hashid) 1 > /dev/null 2>>ERROR_FILE
+check "HashID"
+
+# 29. Nishang
+(sudo git clone https://github.com/samratashok/nishang.git /opt/nishang) 1 > /dev/null 2>>ERROR_FILE
+check "Nishang"
+

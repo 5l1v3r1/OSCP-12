@@ -73,6 +73,10 @@ Tmux plugin manager - https://github.com/tmux-plugins/tpm
 * Tmux Better Mouse Mode - https://github.com/NHDaly/tmux-better-mouse-mode
 ##### 27. Impacket -  Impacket is a collection of Python classes for working with network protocols
 https://github.com/CoreSecurity/impacket
+##### 28. HashID - Identify the different types of hashes used to encrypt data and especially passwords
+https://psypanda.github.io/hashID/
+##### 29. Nishang - Powershell for pentesting
+https://github.com/samratashok/nishang
 
 ### Other
 1. Firefox ext:

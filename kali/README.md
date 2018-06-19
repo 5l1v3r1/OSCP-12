@@ -71,6 +71,8 @@ Tmux plugin manager - https://github.com/tmux-plugins/tpm
 * Tmux logging - https://github.com/tmux-plugins/tmux-logging
 * Tmux Resurrect - Restore tmux environment after system restart - https://github.com/tmux-plugins/tmux-resurrect
 * Tmux Better Mouse Mode - https://github.com/NHDaly/tmux-better-mouse-mode
+##### 27. Impacket -  Impacket is a collection of Python classes for working with network protocols
+https://github.com/CoreSecurity/impacket
 
 ### Other
 1. Firefox ext:

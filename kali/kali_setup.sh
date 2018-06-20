@@ -60,6 +60,10 @@
 # https://psypanda.github.io/hashID/
 # 29. Nishang - Powershell for pentesting
 # https://github.com/samratashok/nishang
+# 30. Ebowla - Framework for Making Environmental Keyed Payloads
+# https://github.com/Genetic-Malware/Ebowla
+#  
+#
 # Other
 # 1. Firefox ext:
 #    1.1. User Agent Switcher - https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/?src=search
@@ -261,6 +265,8 @@ check "Impacket"
 check "HashID"
 
 # 29. Nishang
-(sudo git clone https://github.com/samratashok/nishang.git /opt/nishang) 1 > /dev/null 2>>ERROR_FILE
+(git clone https://github.com/samratashok/nishang.git /opt/nishang) 1 > /dev/null 2>>ERROR_FILE
 check "Nishang"
 
+# 30. Ebowla
+(git clone https://github.com/Genetic-Malware/Ebowla /opt/ebowla) 1 > /dev/null 2>>ERROR_FILE

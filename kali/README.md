@@ -77,6 +77,8 @@ https://github.com/CoreSecurity/impacket
 https://psypanda.github.io/hashID/
 ##### 29. Nishang - Powershell for pentesting
 https://github.com/samratashok/nishang
+##### 30. Ebowla - Framework for Making Environmental Keyed Payloads
+https://github.com/Genetic-Malware/Ebowla
 
 ### Other
 1. Firefox ext:

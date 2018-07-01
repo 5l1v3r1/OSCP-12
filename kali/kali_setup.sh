@@ -223,7 +223,7 @@ check "sshng2john"
 
 #25. CherryTree 
 install "CherryTree"
-(mkdir -p /opt/utils/cherrytree && cd /opt/utils/cherrytree && wget -q http://www.giuspen.com/software/cherrytree_0.38.4-0_all.deb && apt-get -y install python-gtk2 python-gtksourceview2 p7zip-full python-dbus python-enchant python-chardet && dpkg - i cherrytree_0.38.4-0_all.deb)  1>/dev/null 2>>ERROR_FILE
+(mkdir -p /opt/utils/cherrytree && cd /opt/utils/cherrytree && wget -q http://www.giuspen.com/software/cherrytree_0.38.4-0_all.deb && apt-get -y install python-gtk2 python-gtksourceview2 p7zip-full python-dbus python-enchant python-chardet && dpkg -i cherrytree_0.38.4-0_all.deb)  1>/dev/null 2>>ERROR_FILE
 check "CherryTree"
 
 # 26. Tmux

@@ -270,3 +270,5 @@ check "Nishang"
 
 # 30. Ebowla
 (git clone https://github.com/Genetic-Malware/Ebowla /opt/ebowla) 1 > /dev/null 2>>ERROR_FILE
+check "Ebowla"
+

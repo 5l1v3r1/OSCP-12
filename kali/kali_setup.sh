@@ -96,8 +96,8 @@ function install () {
 }
 
 # check for root
-if [ ${iam} != "root" ]; then
-    brash_text "Error: You Must Run Script With Sudo"
+if [[ "$(whoami)" != "root" ]]; then
+    printf "${RED}Error: You Must Run Script  as root${NC}\n"
     exit 1
 fi
 
@@ -173,7 +173,7 @@ install "LinEnum"
 check "LinEnum"
 
 #15. linuxprivchecker
-instll "Linuxprivchecker"
+install "Linuxprivchecker"
 (mkdir -p /opt/linux/linuxprivchecker && cd /opt/linux/linuxprivchecker && wget -q https://www.securitysift.com/download/linuxprivchecker.py)  1>/dev/null 2>>ERROR_FILE
 check "Linuxprivchecker"
  
@@ -257,18 +257,18 @@ tmux_conf="
 check "Tmux"
 
 # 27. Impacket
-(git clone https://github.com/CoreSecurity/impacket.git /opt/impacket && pip install /opt/impacket) 1 > /dev/null 2>>ERROR_FILE
+(git clone https://github.com/CoreSecurity/impacket.git /opt/impacket && pip install /opt/impacket) 1>/dev/null 2>>ERROR_FILE
 check "Impacket"
 
 # 28. HashID
-(pip install hashid) 1 > /dev/null 2>>ERROR_FILE
+(pip install hashid) 1>/dev/null 2>>ERROR_FILE
 check "HashID"
 
 # 29. Nishang
-(git clone https://github.com/samratashok/nishang.git /opt/nishang) 1 > /dev/null 2>>ERROR_FILE
+(git clone https://github.com/samratashok/nishang.git /opt/nishang) 1>/dev/null 2>>ERROR_FILE
 check "Nishang"
 
 # 30. Ebowla
-(git clone https://github.com/Genetic-Malware/Ebowla /opt/ebowla) 1 > /dev/null 2>>ERROR_FILE
+(git clone https://github.com/Genetic-Malware/Ebowla /opt/ebowla) 1>/dev/null 2>>ERROR_FILE
 check "Ebowla"
 

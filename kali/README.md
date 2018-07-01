@@ -8,7 +8,8 @@
 ```bash
 chmod u+x kali_setup.sh
 ```
-3. Run it as root or with sudo:
+3. Change USER variable to one of usernames registered in the system (root, admin, lol etc) 
+4. Run it as root or with sudo:
 ```bash
 ./kali_setup.sh 
 ```

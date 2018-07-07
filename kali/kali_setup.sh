@@ -62,7 +62,10 @@
 # https://github.com/samratashok/nishang
 # 30. Ebowla - Framework for Making Environmental Keyed Payloads
 # https://github.com/Genetic-Malware/Ebowla
-#  
+# 31. Bettercap - the Swiss army knife for network attacks and monitoring
+# https://www.bettercap.org/
+#
+#
 #
 # Other
 # 1. Firefox ext:
@@ -272,3 +275,6 @@ check "Nishang"
 (git clone https://github.com/Genetic-Malware/Ebowla /opt/ebowla) 1>/dev/null 2>>ERROR_FILE
 check "Ebowla"
 
+#31. Bettercap
+(apt-get install -y libnetfilter-queue-dev libpcap-dev && go get github.com/bettercap/bettercap) 1>/dev/null 2>>ERROR_FILE
+check "Bettercap"

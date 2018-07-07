@@ -80,6 +80,9 @@ https://psypanda.github.io/hashID/
 https://github.com/samratashok/nishang
 ##### 30. Ebowla - Framework for Making Environmental Keyed Payloads
 https://github.com/Genetic-Malware/Ebowla
+##### 31. Bettercap - the Swiss army knife for network attacks and monitoring
+https://www.bettercap.org/
+
 
 ### Other
 1. Firefox ext:

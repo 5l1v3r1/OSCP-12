@@ -82,7 +82,8 @@ https://github.com/samratashok/nishang
 https://github.com/Genetic-Malware/Ebowla
 ##### 31. Bettercap - the Swiss army knife for network attacks and monitoring
 https://www.bettercap.org/
-
+##### 32. Mimikatz - tool for gathering creds...and many other things
+https://github.com/gentilkiwi/mimikatz
 
 ### Other
 1. Firefox ext:

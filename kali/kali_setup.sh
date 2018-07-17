@@ -64,7 +64,8 @@
 # https://github.com/Genetic-Malware/Ebowla
 # 31. Bettercap - the Swiss army knife for network attacks and monitoring
 # https://www.bettercap.org/
-#
+# 32. Mimikatz - tool for gathering creds...and many other things
+# https://github.com/gentilkiwi/mimikatz
 #
 #
 # Other
@@ -275,6 +276,11 @@ check "Nishang"
 (git clone https://github.com/Genetic-Malware/Ebowla /opt/ebowla) 1>/dev/null 2>>ERROR_FILE
 check "Ebowla"
 
-#31. Bettercap
+# 31. Bettercap
 (apt-get install -y libnetfilter-queue-dev libpcap-dev && go get github.com/bettercap/bettercap) 1>/dev/null 2>>ERROR_FILE
 check "Bettercap"
+
+# 32. Mimikatz
+(mkdir -p /opt/windows/mimikatz && cd /opt/windows/mimikatz && wget -q https://github.com/gentilkiwi/mimikatz/releases/download/2.1.1-20180616/mimikatz_trunk.zip)
+check "Mimikatz"
+

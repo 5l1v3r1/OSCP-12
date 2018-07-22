@@ -84,6 +84,11 @@ https://github.com/Genetic-Malware/Ebowla
 https://www.bettercap.org/
 ##### 32. Mimikatz - tool for gathering creds...and many other things
 https://github.com/gentilkiwi/mimikatz
+##### 33. A list of useful payloads and bypasses for Web Application Security
+https://github.com/swisskyrepo/PayloadsAllTheThings
+##### 34. LFI wordlists from LFISuite
+https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest.txt
+https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest_huge.txt
 
 ### Other
 1. Firefox ext:

@@ -66,6 +66,12 @@
 # https://www.bettercap.org/
 # 32. Mimikatz - tool for gathering creds...and many other things
 # https://github.com/gentilkiwi/mimikatz
+# 33. A list of useful payloads and bypasses for Web Application Security
+# https://github.com/swisskyrepo/PayloadsAllTheThings
+# 34. LFI wordlists from LFISuite
+# https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest.txt
+# https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest_huge.txt
+#
 #
 #
 # Other
@@ -281,6 +287,15 @@ check "Ebowla"
 check "Bettercap"
 
 # 32. Mimikatz
-(mkdir -p /opt/windows/mimikatz && cd /opt/windows/mimikatz && wget -q https://github.com/gentilkiwi/mimikatz/releases/download/2.1.1-20180616/mimikatz_trunk.zip)
+(mkdir -p /opt/windows/mimikatz && cd /opt/windows/mimikatz && wget -q https://github.com/gentilkiwi/mimikatz/releases/download/2.1.1-20180616/mimikatz_trunk.zip) 1>/dev/null 2>>ERROR_FILE
 check "Mimikatz"
+
+#33. Payloads All The Things
+install "PayloadsAllTheThings"
+(git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git /opt/lists/PayloadsAllTheThings) 1>/dev/null 2>>ERROR_FILE
+check "PayloadsAllTheThings"
+
+#34. LFI wordlists
+install "LFI-wordlists"
+(mkdir -p /opt/lists/fli_lists && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest.txt && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest_huge.txt) 1>/dev/null 2>>ERROR_FILE
 

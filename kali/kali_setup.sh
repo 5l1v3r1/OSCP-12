@@ -71,6 +71,10 @@
 # 34. LFI wordlists from LFISuite
 # https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest.txt
 # https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest_huge.txt
+# 35. RsaCtfTool - RSA tool for ctf - retreive private key from weak public key and/or uncipher data
+# https://github.com/Ganapati/RsaCtfTool
+# 36. pwntools - CTF framework and exploit development library
+# https://github.com/arthaud/python3-pwntools
 #
 #
 #
@@ -290,12 +294,19 @@ check "Bettercap"
 (mkdir -p /opt/windows/mimikatz && cd /opt/windows/mimikatz && wget -q https://github.com/gentilkiwi/mimikatz/releases/download/2.1.1-20180616/mimikatz_trunk.zip) 1>/dev/null 2>>ERROR_FILE
 check "Mimikatz"
 
-#33. Payloads All The Things
+# 33. Payloads All The Things
 install "PayloadsAllTheThings"
 (git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git /opt/lists/PayloadsAllTheThings) 1>/dev/null 2>>ERROR_FILE
 check "PayloadsAllTheThings"
 
-#34. LFI wordlists
+# 34. LFI wordlists
 install "LFI-wordlists"
 (mkdir -p /opt/lists/fli_lists && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest.txt && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest_huge.txt) 1>/dev/null 2>>ERROR_FILE
 
+# 35. RsaCtfTool
+(git clone https://github.com/Ganapati/RsaCtfTool.git /opt/RsaCtfTool) 1>/dev/null 2>>ERROR_FILE
+check "RsaCtfTool"
+
+# 36. pwntools
+(apt-get install python2.7 python-pip python-dev libssl-dev libffi-dev build-essential && pip install --upgrade pwntools) 1>/dev/null 2>>ERROR_FILE
+check "pwntools"

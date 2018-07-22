@@ -89,6 +89,10 @@ https://github.com/swisskyrepo/PayloadsAllTheThings
 ##### 34. LFI wordlists from LFISuite
 https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest.txt
 https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest_huge.txt
+##### 35. RsaCtfTool - RSA tool for ctf - retreive private key from weak public key and/or uncipher data
+https://github.com/Ganapati/RsaCtfTool
+##### 36. pwntools - CTF framework and exploit development library
+https://github.com/arthaud/python3-pwntools
 
 ### Other
 1. Firefox ext:

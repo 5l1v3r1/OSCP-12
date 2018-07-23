@@ -313,5 +313,5 @@ check "RsaCtfTool"
 check "pwntools"
 
 # 37. Powershell
-#(apt-get install libunwind8 libicu5 && mkdir -p /opt/windows/Powershell && cd /opt/windows/Powershell && wget -q https://github.com/PowerShell/PowerShell/releases/download/v6.0.3/powershell_6.0.3-1.debian.9_amd64.deb && dpkg -i powershell_6.0.3-1.debian.9_amd64.deb) 1>/dev/null 2>>ERROR_FILE
+#(apt update && apt -y install curl gnupg apt-transport-https && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - && echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/powershell.list && apt update && apt -y install libcurl3 && apt -y install powershell) 1>/dev/null 2>>ERROR_FILE
 #check "Powershell"

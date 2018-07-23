@@ -75,7 +75,8 @@
 # https://github.com/Ganapati/RsaCtfTool
 # 36. pwntools - CTF framework and exploit development library
 # https://github.com/arthaud/python3-pwntools
-#
+# 37. powershell - powershell for linux
+# https://github.com/PowerShell/PowerShell
 #
 #
 # Other
@@ -301,7 +302,7 @@ check "PayloadsAllTheThings"
 
 # 34. LFI wordlists
 install "LFI-wordlists"
-(mkdir -p /opt/lists/fli_lists && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest.txt && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest_huge.txt) 1>/dev/null 2>>ERROR_FILE
+(mkdir -p /opt/lists/fli_lists && cd /opt/lists/fli_lists && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest.txt && wget -q https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest_huge.txt) 1>/dev/null 2>>ERROR_FILE
 
 # 35. RsaCtfTool
 (git clone https://github.com/Ganapati/RsaCtfTool.git /opt/RsaCtfTool) 1>/dev/null 2>>ERROR_FILE
@@ -310,3 +311,7 @@ check "RsaCtfTool"
 # 36. pwntools
 (apt-get install python2.7 python-pip python-dev libssl-dev libffi-dev build-essential && pip install --upgrade pwntools) 1>/dev/null 2>>ERROR_FILE
 check "pwntools"
+
+# 37. Powershell
+(apt-get install libunwind8 libicu5 && mkdir -p /opt/windows/Powershell && cd /opt/windows/Powershell && wget -q https://github.com/PowerShell/PowerShell/releases/download/v6.0.3/powershell_6.0.3-1.debian.9_amd64.deb && dpkg -i powershell_6.0.3-1.debian.9_amd64.deb) 1>/dev/null 2>>ERROR_FILE
+check "Powershell"

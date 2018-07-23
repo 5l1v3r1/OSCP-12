@@ -309,7 +309,7 @@ install "LFI-wordlists"
 check "RsaCtfTool"
 
 # 36. pwntools
-(apt-get install python2.7 python-pip python-dev libssl-dev libffi-dev build-essential && pip install --upgrade pwntools) 1>/dev/null 2>>ERROR_FILE
+(apt-get install -y python2.7 python-pip python-dev libssl-dev libffi-dev build-essential && pip install --upgrade pwntools) 1>/dev/null 2>>ERROR_FILE
 check "pwntools"
 
 # 37. Powershell

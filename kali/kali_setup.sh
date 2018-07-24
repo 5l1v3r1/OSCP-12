@@ -77,6 +77,8 @@
 # https://github.com/arthaud/python3-pwntools
 # 37. powershell - powershell for linux
 # https://github.com/PowerShell/PowerShell
+# 38. Collection of usefull powershell utilities by b33f (http://www.fuzzysecurity.com/)
+# https://github.com/FuzzySecurity/PowerShell-Suite
 #
 #
 # Other
@@ -280,7 +282,7 @@ check "Impacket"
 check "HashID"
 
 # 29. Nishang
-(git clone https://github.com/samratashok/nishang.git /opt/nishang) 1>/dev/null 2>>ERROR_FILE
+(git clone https://github.com/samratashok/nishang.git /opt/windows/nishang) 1>/dev/null 2>>ERROR_FILE
 check "Nishang"
 
 # 30. Ebowla
@@ -315,3 +317,7 @@ check "pwntools"
 # 37. Powershell
 #(apt update && apt -y install curl gnupg apt-transport-https && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - && echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/powershell.list && apt update && apt -y install libcurl3 && apt -y install powershell) 1>/dev/null 2>>ERROR_FILE
 #check "Powershell"
+
+# 38. PowerShell-Suite
+(git clone https://github.com/FuzzySecurity/PowerShell-Suite.git /opt/windows/PowerShell_Suite) 1>/dev/null 2>>ERROR_FILE
+check "PowerShell-Suite"

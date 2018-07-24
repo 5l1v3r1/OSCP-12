@@ -93,8 +93,8 @@ https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest_huge.txt
 https://github.com/Ganapati/RsaCtfTool
 ##### 36. pwntools - CTF framework and exploit development library
 https://github.com/arthaud/python3-pwntools
-##### 37. powershell - powershell for linux
-https://github.com/PowerShell/PowerShell
+##### 38. Collection of usefull powershell utilities by b33f (http://www.fuzzysecurity.com/)
+https://github.com/FuzzySecurity/PowerShell-Suite
 
 ### Other
 1. Firefox ext:

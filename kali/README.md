@@ -1,6 +1,6 @@
 # Kali linux setup
 
-### Script and notes on additional tools to get and/or install after Kali Linux installation 
+### Script and notes on additional tools to get and/or install after Kali Linux (x86) installation 
 
 #### Script usage:
 1. Change user name in the beginnig of the script file kali_setup.sh
@@ -63,7 +63,7 @@ https://github.com/danielmiessler/SecLists
 ##### 22. ufw - iptables wrapper
 ##### 23. sshng2john
 https://github.com/stricture/hashstack-server-plugin-jtr/tree/master/scrapers
-##### 24. lnav - log file navigator
+##### 24. lnav - log file navigator (supports only x64 version, will not be installed...great tool, check it out)
 http://lnav.org/downloads
 ##### 25. CherryTree - Notes
 https://www.giuspen.com/cherrytree/#downl
@@ -93,18 +93,27 @@ https://github.com/D35m0nd142/LFISuite/blob/master/pathtotest_huge.txt
 https://github.com/Ganapati/RsaCtfTool
 ##### 36. pwntools - CTF framework and exploit development library
 https://github.com/arthaud/python3-pwntools
+##### 37. powershell for linux (supports only x64 version, will not be installed, just to mention about it existence)
+https://github.com/PowerShell/PowerShell
 ##### 38. Collection of usefull powershell utilities by b33f (http://www.fuzzysecurity.com/)
 https://github.com/FuzzySecurity/PowerShell-Suite
+##### 39. windows-kernel-exploits - collecttion of windows exploits
+https://github.com/SecWiki/windows-kernel-exploits
+##### 40. Few complied and tested public Windows exploits
+https://github.com/WindowsExploits/Exploits
+##### 41. DBeaver - free and open source universal database tool
+https://github.com/dbeaver/dbeaver
+
 
 ### Other
 1. Firefox ext:
-    1.1. User Agent Switcher - https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/?src=search
+    1.1. User Agent Switcher - https://addons.mozilla.org/en-US/firefox/addon/uaswitcher
     
     1.2 Wappalyzer - https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
     
     1.3 FoxyProxy - https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
     
-    1.4. Cookie Manager+ 
+    1.4. Cookie Manager+  - https://addons.mozilla.org/en-US/firefox/addon/cookies-manager-plus/
 2. Screenshot tool - gnome extention
 3. Start up applications - tweeks - startup aplications
 4. Windows at bottom - tweeks - extentions - window list

@@ -79,6 +79,13 @@
 # https://github.com/PowerShell/PowerShell
 # 38. Collection of usefull powershell utilities by b33f (http://www.fuzzysecurity.com/)
 # https://github.com/FuzzySecurity/PowerShell-Suite
+# 39. windows-kernel-exploits - collecttion of windows exploits
+# https://github.com/SecWiki/windows-kernel-exploits
+# 40. Few complied and tested public Windows exploits
+# https://github.com/WindowsExploits/Exploits
+# 41. DBeaver - free and open source universal database tool
+# https://github.com/dbeaver/dbeaver
+#
 #
 #
 # Other
@@ -321,3 +328,16 @@ check "pwntools"
 # 38. PowerShell-Suite
 (git clone https://github.com/FuzzySecurity/PowerShell-Suite.git /opt/windows/PowerShell_Suite) 1>/dev/null 2>>ERROR_FILE
 check "PowerShell-Suite"
+
+# 39. windows-kernel-exploits
+(git clone https://github.com/SecWiki/windows-kernel-exploits.git /opt/windows/windows-kernel-exploits) 1>/dev/null 2>>ERROR_FILE
+check "windows-kernel-exploits"
+
+# 40. Compiled Windows exploits
+(git clone https://github.com/WindowsExploits/Exploits.git /opt/windows/compiled_windows_exp) 1>/dev/null 2>>ERROR_FILE
+check "complied_windows_exp"
+
+# 41. DBeaver
+(mkdir -p /opt/dbeaver && cd /opt/dbeaver && wget -q https://dbeaver.io/files/dbeaver-ce_latest_i386.deb && dpkg -i dbeaver-ce_latest_i386.deb) 1>/dev/null 2>>ERROR_FILE
+check "DBeaver"
+

@@ -85,7 +85,8 @@
 # https://github.com/WindowsExploits/Exploits
 # 41. DBeaver - free and open source universal database tool
 # https://github.com/dbeaver/dbeaver
-#
+# 42. linux-kernel-exploits - collecttion of linux exploits
+# https://github.com/SecWiki/linux-kernel-exploits
 #
 #
 # Other
@@ -340,4 +341,8 @@ check "complied_windows_exp"
 # 41. DBeaver
 (mkdir -p /opt/dbeaver && cd /opt/dbeaver && wget -q https://dbeaver.io/files/dbeaver-ce_latest_i386.deb && dpkg -i dbeaver-ce_latest_i386.deb) 1>/dev/null 2>>ERROR_FILE
 check "DBeaver"
+
+# 42. linux-kernel-exploits
+(git clone https://github.com/SecWiki/linux-kernel-exploits.git /opt/linux/linux-kernel-exploits) 1>/dev/null 2>>ERROR_FILE
+check "linux-kernel-exploits"
 

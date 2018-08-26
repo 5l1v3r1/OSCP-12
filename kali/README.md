@@ -103,6 +103,8 @@ https://github.com/SecWiki/windows-kernel-exploits
 https://github.com/WindowsExploits/Exploits
 ##### 41. DBeaver - free and open source universal database tool
 https://github.com/dbeaver/dbeaver
+##### 42. linux-kernel-exploits - collecttion of linux exploits
+https://github.com/SecWiki/linux-kernel-exploits
 
 
 ### Other
